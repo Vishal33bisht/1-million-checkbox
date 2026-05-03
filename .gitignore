@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+server.out.log
+server.err.log
+
+# Build and coverage output
+dist/
+build/
+coverage/
+.cache/
+
+# Package manager noise: this project uses pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

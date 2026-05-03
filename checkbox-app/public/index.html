@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 million checkbox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="header">
+            <p class="eyebrow">Realtime checkbox grid</p>
+            <h1>Checkboxes</h1>
+            <p class="intro">Anonymous users can watch. Log in to toggle boxes and broadcast changes live.</p>
+        </section>
+
+        <section class="auth-panel" aria-label="Authentication">
+            <form id="loginForm" class="login-form">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" autocomplete="username" placeholder="demo-user" maxlength="40">
+                <button type="submit">Log in</button>
+            </form>
+            <button id="logoutButton" type="button" hidden>Log out</button>
+        </section>
+
+        <section class="meta" aria-live="polite">
+            <span id="statusText">Connecting...</span>
+            <span id="userText">Anonymous read-only mode</span>
+            <span id="presenceText">0 connected users</span>
+            <span id="counterText">0 checked</span>
+        </section>
+
+        <div id="container" aria-label="Checkbox grid"></div>
+    </main>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
